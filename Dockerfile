@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 4200
 
 # Run app.py when the container launches
-CMD ["python", "auth.py"]
+CMD ["python3", "auth.py"]
