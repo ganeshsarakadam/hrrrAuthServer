@@ -2,6 +2,7 @@ version: '3'
 services:
   web:
     build: .
+    image: "auth"
     ports:
      - "4200:4200"
   mongo:
