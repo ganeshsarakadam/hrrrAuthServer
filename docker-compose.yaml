@@ -11,6 +11,7 @@ services:
       - "27017:27017"
     volumes:
       - ../lawnUsersData:/data/db
+      command: mongod --dbpath /data/db --repair
 
 volumes:
   mongodb_data_container:
