@@ -10,8 +10,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ../lawnUsersData:/data/db
-    command: mongod --dbpath /data/db --repair
+      - ../users/db:/data/db
 
 volumes:
   mongodb_data_container:
