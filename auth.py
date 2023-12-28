@@ -9,6 +9,7 @@ from bson.objectid import ObjectId
 authServerApp = Flask(__name__)
 
 authServerApp.config['JWT_SECRET_KEY'] = 'hrrr-weather-lawn'  
+authServerApp.config['JWT_ALGORITHM'] = 'HS256'
 
 
 # TBD Change this
