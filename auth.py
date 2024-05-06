@@ -40,7 +40,7 @@ def login():
     if user is None:
         return jsonify({"msg": "user not found"}), 401
 
-    access_token = create_access_token(identity=username, expires_delta=timedelta(minutes=8))
+    access_token = create_access_token(identity=username, expires_delta=timedelta(minutes=180))
     return access_token
 
 
